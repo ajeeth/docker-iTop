@@ -79,6 +79,13 @@ RUN set -x \
  \
  && rm -rf /var/lib/apt/lists/*
 
+#=== Install mariadb-client. Required for backup from iTop menu ===
+RUN set -x \
+ && runtimeDeps="mariadb-client" \
+ && apt-get update && apt-get install -y ${runtimeDeps} --no-install-recommends \
+  \
+ && rm -rf /var/lib/apt/lists/*
+
 #=== Set app folder ===
 ARG APP_NAME="itop"
 WORKDIR /var/www/$APP_NAME
