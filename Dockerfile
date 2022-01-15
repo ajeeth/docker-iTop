@@ -91,8 +91,8 @@ ARG APP_NAME="itop"
 WORKDIR /var/www/$APP_NAME
 
 #=== Add iTop source code ===
-ARG ITOP_VERSION=3.0.0
-ARG ITOP_PATCH=8663
+ARG ITOP_VERSION=2.7.6
+ARG ITOP_PATCH=8526
 RUN set -x \
  && buildDeps="libarchive-tools" \
  && apt-get update && apt-get install -y ${buildDeps} --no-install-recommends \
