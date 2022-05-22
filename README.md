@@ -1,6 +1,6 @@
 # iTop on Docker
 
-This repo provides a quick way to start a demo environnement for iTop 2.7 LTS. The Dockerfile is also suitable for production usage.
+This repo provides a quick way to start a demo environnement for iTop 3.0 STS. The Dockerfile is also suitable for production usage.
 
 ## How to Use
 
@@ -15,7 +15,7 @@ _Running using local volumes:_
 - **adminer**: a PHP tool to have a look on your database.
 
 _Running apache web server with PHP support:_
-- **itop**: version 2.7 LTS
+- **itop**: version 3.0 STS
 
 All volumes are mounted in `./volumes`.
 
